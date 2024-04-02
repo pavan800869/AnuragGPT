@@ -3,7 +3,7 @@ import requests
 from openai import OpenAI
 
 app = Flask(__name__)
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='openai-api-key')
 @app.route('/')
 def index():
     return render_template('index.html')
