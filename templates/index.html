@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag University Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Anurag University Chatbot</div>
+        <div id="chat-container">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="message-form">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <footer>
+            <p>&copy; 2024 Anurag University. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

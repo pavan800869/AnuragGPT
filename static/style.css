@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80vw; /* 80% of the viewport width */
+    height: calc(45vw * 9 / 16); /* Calculate height to maintain 16:9 aspect ratio */
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#chat-container {
+    flex: 1; /* Fill remaining space */
+    width: 100%; /* Fill entire container */
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.user-message-container,
+.bot-response-container {
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout */
+    align-items: flex-start; /* Adjusted alignment */
+    margin-bottom: 10px;
+}
+
+.user-message,
+.bot-response {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.bot-response {
+    background-color: #28a745;
+}
+
+#message-form {
+    margin-top: 20px; /* Added margin to separate from chat container */
+    display: flex;
+    width: 100%; /* Fill entire container */
+    justify-content: center; /* Center horizontally */
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
